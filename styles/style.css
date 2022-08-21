@@ -8,6 +8,7 @@ font-family: 'Manrope', sans-serif; */
 body{
     font-family: 'Manrope', sans-serif;
     color: white;
+    margin: 0;
 }
 
 header{
@@ -60,6 +61,12 @@ main{
     text-align: center;
 }
 
+.selection-calculation{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
 .selected-players{
     width: 264px;
     height: 380px;
@@ -75,8 +82,24 @@ main{
     height: 380px;
     border: .5px solid rgba(67, 67, 67, 1);
     background-color: rgba(13, 13, 13, 1);
-    padding: 0px 5px 10px 5px;
+    padding: 0px 5px 20px 5px;
+    text-align: center;
 }
+
+hr{
+    margin: 0;
+    background-color: #717171;
+    border-width: 0.1px;
+    
+}
+
+footer{
+    height: 100px;
+    text-align: center;
+    background-color: rgba(13, 13, 13, 1) ;
+    padding-top: 40px;
+}
+
 
 
 
