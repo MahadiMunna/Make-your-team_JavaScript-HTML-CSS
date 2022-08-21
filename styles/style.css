@@ -1,0 +1,82 @@
+/* font style import */
+/* font-family: 'Berkshire Swash', cursive;
+font-family: 'Manrope', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope&display=swap');
+
+
+body{
+    font-family: 'Manrope', sans-serif;
+    color: white;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 1);
+    padding: 120px 300px;
+    text-align: center;
+}
+
+.banner-text h1{
+    color: rgba(255, 94, 25, 1);
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 60px;
+}
+
+main{
+    background-color: #151515;
+    padding: 50px 10px 90px 90px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 24px;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+
+.blue-btn{
+    background-color: rgba(1, 81, 150, 1);
+    border: 0px;
+    height: 41px;
+    width: 221px;
+    color: white;
+    font-size: 15px;
+}
+
+.player-card{
+    width: 264px;
+    height: 380px;
+    border: .5px solid rgba(67, 67, 67, 1);
+    background-color: rgba(13, 13, 13, 1);
+    
+}
+.player-card img{
+    width: 264px;
+}
+.player-details{
+    text-align: center;
+}
+
+.selected-players{
+    width: 264px;
+    height: 380px;
+    border: .5px solid rgba(67, 67, 67, 1);
+    background-color: rgba(13, 13, 13, 1);
+}
+.selected-players h3{
+    text-align: center;
+    
+}
+.budget{
+    width: 264px;
+    height: 380px;
+    border: .5px solid rgba(67, 67, 67, 1);
+    background-color: rgba(13, 13, 13, 1);
+    padding: 0px 5px 10px 5px;
+}
+
+
+
