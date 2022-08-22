@@ -1,9 +1,3 @@
-function totalPlayer(){
-    const totalPlayerList = document.querySelectorAll('#player-list li');
-    const totalPlayerNumber = totalPlayerList.length;
-    return totalPlayerNumber;
-}
-
 function addPlayer(playerNameId,btnId){
 
     const totalPlayerNumber = totalPlayer();
@@ -21,6 +15,7 @@ function addPlayer(playerNameId,btnId){
     btnStatus.disabled = true;
     btnStatus.style.backgroundColor = 'rgba(175, 175, 175, 1)'
 }
+
 
 document.getElementById('messi').addEventListener('click',function(){
     addPlayer('messi-name','messi');

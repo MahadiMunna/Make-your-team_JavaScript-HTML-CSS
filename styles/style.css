@@ -104,6 +104,9 @@ main{
     color: white;
     border: 1px solid white;
 }
+.t-cost{
+    color: rgba(255, 94, 25, 1);
+}
 
 hr{
     margin: 0;

@@ -110,14 +110,17 @@
             </div>
             <div class="budget">
                 <h3>Budget</h3>
-                <div class="input"><p class="paragraph">Per Player </p><input class="input-field" type="text"></div>
+                <div class="input"><p class="paragraph">Per Player </p><input id="per-person" class="input-field" type="text"></div>
                 
-                <button class="blue-btn">Calculate</button>
-                <div class="input"><p class="paragraph">Player Expenses </p> <p>$<span>00</span></p></div>
-                <div class="input"><p class="paragraph">Manager</p><input class="input-field" type="text"></div>
-                <div class="input"><p class="paragraph">Coach</p><input class="input-field" type="text"></div>
-                <button class="blue-btn">Calculate Total</button>
-                <div class="input"><p class="paragraph">Total </p> <p>$<span>00</span></p></div>
+                <button id="calculate-total-player-cost" class="blue-btn">Calculate</button>
+
+                <div class="input"><p class="paragraph">Player Expenses </p> <p>$<span id="total-player-cost">00</span></p></div>
+                <div class="input"><p class="paragraph">Manager</p><input id="manager-cost" class="input-field" type="text"></div>
+                <div class="input"><p class="paragraph">Coach</p><input id="coach-cost" class="input-field" type="text"></div>
+                
+                <button id="calculate-total-cost" class="blue-btn">Calculate Total</button>
+
+                <div class="input"><p class="paragraph">Total </p> <p class="t-cost">$<span id="total-cost">00</span></p></div>
             </div>
         </div>
     </main>
@@ -125,6 +128,9 @@
     <footer>
         <p>Copyright @ 2022 All Rights Reserved.</p>
     </footer>
+
+    <script src="js/utilities.js"></script>
     <script src="js/players.js"></script>
+    <script src="js/budgets.js"></script>
 </body>
 </html>
