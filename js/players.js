@@ -1,21 +1,10 @@
-
-function btnDisable(btnId){
-    const totalPlayerNumber = totalPlayer();
-    const btnStatus = document.getElementById(btnId);
-    if(totalPlayerNumber<5){
-        btnStatus.disabled = true;
-    }
-    if(btnStatus.disabled==true){
-        btnStatus.style.backgroundColor = 'rgba(175, 175, 175, 1)'
-    }   
-}
 function totalPlayer(){
     const totalPlayerList = document.querySelectorAll('#player-list li');
     const totalPlayerNumber = totalPlayerList.length;
     return totalPlayerNumber;
 }
 
-function addPlayer(playerNameId){
+function addPlayer(playerNameId,btnId){
 
     const totalPlayerNumber = totalPlayer();
     if(totalPlayerNumber==5){
@@ -28,41 +17,44 @@ function addPlayer(playerNameId){
     const playerName = document.getElementById(playerNameId).innerText;
     li.innerText = playerName;
     playerList.appendChild(li);
+    const btnStatus = document.getElementById(btnId);
+    btnStatus.disabled = true;
+    btnStatus.style.backgroundColor = 'rgba(175, 175, 175, 1)'
 }
 
 document.getElementById('messi').addEventListener('click',function(){
-    addPlayer('messi-name');
-    btnDisable('messi');
+    addPlayer('messi-name','messi');
+
 })
 document.getElementById('Ronaldo').addEventListener('click',function(){
-    addPlayer('Ronaldo-name');
-    btnDisable('Ronaldo');  
+    addPlayer('Ronaldo-name','Ronaldo');
+ 
 })
 document.getElementById('Suárez').addEventListener('click',function(){
-    addPlayer('Suárez-name');
-    btnDisable('Suárez');
+    addPlayer('Suárez-name','Suárez');
+
 })
 document.getElementById('Marcelo').addEventListener('click',function(){
-    addPlayer('Marcelo-name');
-    btnDisable('Marcelo');
+    addPlayer('Marcelo-name','Marcelo');
+ 
 })
 document.getElementById('Mbappe').addEventListener('click',function(){
-    addPlayer('Mbappe-name');
-    btnDisable('Mbappe');
+    addPlayer('Mbappe-name','Mbappe');
+  
 })
 document.getElementById('Neymar').addEventListener('click',function(){
-    addPlayer('Neymar-name');
-    btnDisable('Neymar');
+    addPlayer('Neymar-name','Neymar');
+   
 })
 document.getElementById('Ramos').addEventListener('click',function(){
-    addPlayer('Ramos-name');
-    btnDisable('Ramos');
+    addPlayer('Ramos-name','Ramos');
+  
 })
 document.getElementById('Thomas').addEventListener('click',function(){
-    addPlayer('Thomas-name');
-    btnDisable('Thomas');
+    addPlayer('Thomas-name','Thomas');
+  
 })
 document.getElementById('Zlatan').addEventListener('click',function(){
-    addPlayer('Zlatan-name');
-    btnDisable('Zlatan');
+    addPlayer('Zlatan-name','Zlatan');
+    
 })
