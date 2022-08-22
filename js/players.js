@@ -1,8 +1,14 @@
+function totalPlayer(){
+    const totalPlayerList = document.querySelectorAll('#player-list li');
+    const totalPlayerNumber = totalPlayerList.length;
+    return totalPlayerNumber;
+}
+
 function addPlayer(playerNameId,btnId){
 
     const totalPlayerNumber = totalPlayer();
     if(totalPlayerNumber==5){
-        alert('You have alredy select 5 players!');
+        alert('You have already selected 5 players!');
         return;
     }
 
@@ -11,6 +17,7 @@ function addPlayer(playerNameId,btnId){
     const playerName = document.getElementById(playerNameId).innerText;
     li.innerText = playerName;
     playerList.appendChild(li);
+
     const btnStatus = document.getElementById(btnId);
     btnStatus.disabled = true;
     btnStatus.style.backgroundColor = 'rgba(175, 175, 175, 1)'
