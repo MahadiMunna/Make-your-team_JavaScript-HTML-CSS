@@ -70,7 +70,6 @@ main{
 .selected-players{
     width: 264px;
     height: 380px;
-    border: .5px solid rgba(67, 67, 67, 1);
     background-color: rgba(13, 13, 13, 1);
 }
 .selected-players h3{
@@ -79,11 +78,31 @@ main{
 }
 .budget{
     width: 264px;
-    height: 380px;
-    border: .5px solid rgba(67, 67, 67, 1);
+    height: 512px;
     background-color: rgba(13, 13, 13, 1);
-    padding: 0px 5px 20px 5px;
     text-align: center;
+    color: rgba(175, 175, 175, 1);
+}
+.budget h3{
+    color: white;
+}
+.budget button{
+    margin: 10px 0px;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.input-field{
+    height: 35px;
+    width: 121px;
+    background-color: rgba(13, 13, 13, 1);
+    color: white;
+    border: 1px solid white;
 }
 
 hr{
