@@ -4,13 +4,22 @@ font-family: 'Manrope', sans-serif; */
 
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope&display=swap');
 
-
+/* overall style */
 body{
     font-family: 'Manrope', sans-serif;
     color: white;
     margin: 0;
 }
+.blue-btn{
+    background-color: rgba(1, 81, 150, 1);
+    border: 0px;
+    height: 41px;
+    width: 221px;
+    color: white;
+    font-size: 15px;
+}
 
+/* header styles  */
 header{
     background-color: rgba(0, 0, 0, 1);
     padding: 120px 300px;
@@ -23,6 +32,8 @@ header{
     font-size: 60px;
 }
 
+
+/* main section styles  */
 main{
     background-color: #151515;
     padding: 60px;
@@ -38,15 +49,7 @@ main{
     grid-row-gap: 24px;
 }
 
-.blue-btn{
-    background-color: rgba(1, 81, 150, 1);
-    border: 0px;
-    height: 41px;
-    width: 221px;
-    color: white;
-    font-size: 15px;
-}
-
+/* player card styles  */
 .player-card{
     width: 264px;
     height: 380px;
@@ -64,6 +67,8 @@ main{
     font-size: medium;
 }
 
+
+/* calculation part  */
 .selection-calculation{
     display: flex;
     flex-direction: column;
@@ -116,6 +121,7 @@ li{
     color: rgba(255, 94, 25, 1);
 }
 
+/* horizontal line  */
 hr{
     margin: 0;
     background-color: #717171;
@@ -123,6 +129,8 @@ hr{
     
 }
 
+
+/* footer style  */
 footer{
     height: 100px;
     text-align: center;

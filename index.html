@@ -9,14 +9,22 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+
+    <!-- banner section  -->
     <header>
         <div class="banner-text">
             <h1>Make Your Team with favourite five!</h1>
-            <p>hey! Make your team with your favourite player. Select 5 players to make your team and be champion! calaculate your budget from here very easily.  </p>
+            <p>Hey! Make your team with your favourite player. Select 5 players to make your team and be champion! calaculate your budget from here very easily.  </p>
         </div>
     </header>
+
+    <!-- player, player selection and budget calculation section  -->
     <main>
-        <div class="players"> 
+
+        <!-- player options  -->
+        <div class="players">
+            
+            <!-- player cards  -->
             <div class="player-card">
                 <div>
                     <img src="players/Lionel-Messi.jpg" alt="">
@@ -97,10 +105,13 @@
                     <h3 id="Zlatan-name">Zlatan Ibrahimovic</h3>
                     <button id="Zlatan" class="blue-btn">SELECT</button>
                 </div>
-            </div>
-            
+            </div>   
         </div>
+
+        <!-- selected players and calculation  -->
         <div class="selection-calculation">
+
+            <!-- selected player list  -->
             <div class="selected-players">
                 <h3>Selected-V</h3>
                 <ol id="player-list">
@@ -108,6 +119,8 @@
 
                 </ol>
             </div>
+
+            <!-- budgets calculation  -->
             <div class="budget">
                 <h3>Budget</h3>
                 <div class="input"><p class="paragraph">Per Player </p><input id="per-person" class="input-field" type="text"></div>
@@ -125,10 +138,14 @@
         </div>
     </main>
     <hr>
+
+    <!-- footer section  -->
     <footer>
         <p>Copyright @ 2022 All Rights Reserved.</p>
     </footer>
 
+
+    <!-- js files links  -->
     <script src="js/utilities.js"></script>
     <script src="js/players.js"></script>
     <script src="js/budgets.js"></script>

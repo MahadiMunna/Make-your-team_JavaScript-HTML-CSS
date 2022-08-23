@@ -1,3 +1,4 @@
+// calculate total player cost 
 document.getElementById('calculate-total-player-cost').addEventListener('click', function () {
     const perPlayerCost = getInputFieldValue('per-person');
     const totalPlayerNumber = totalPlayer();
@@ -5,6 +6,8 @@ document.getElementById('calculate-total-player-cost').addEventListener('click',
 
     document.getElementById('total-player-cost').innerText = totalPlayerCost;
 })
+
+// calculate overall cost 
 document.getElementById('calculate-total-cost').addEventListener('click',function(){
     const totalPlayerCost = getTextFieldValue('total-player-cost');
     const managerCost = getInputFieldValue('manager-cost');
