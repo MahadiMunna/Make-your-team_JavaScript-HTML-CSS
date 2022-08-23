@@ -3,6 +3,11 @@ function getInputFieldValue(inputFieldId){
     const inputField = document.getElementById(inputFieldId);
     const inputFieldValueString = inputField.value ;
     const inputFieldValue = parseInt(inputFieldValueString);
+    const isNumber = isNaN(inputFieldValue);
+    if(isNumber == true ){
+        alert('Please input number!')
+        return 0;
+    }
     return inputFieldValue;
 }
 
